@@ -1,0 +1,88 @@
+/* Container for the tabs */
+.tabs-container {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  overflow-x: auto; /* Allow horizontal scroll when needed */
+  white-space: nowrap;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Flexbox layout for the tabs */
+.tabs {
+  display: flex;
+  gap: 16px;
+  padding: 10px;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Initially hide the scrollbar for Webkit browsers */
+.tabs-container::-webkit-scrollbar {
+  height: 0; /* Hide scrollbar initially */
+}
+
+/* Show scrollbar on hover */
+.tabs-container:hover::-webkit-scrollbar {
+  height: 6px; /* Set scrollbar height when hovering */
+}
+
+/* Styling for scrollbar thumb */
+.tabs-container::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.tabs-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Darker color on hover */
+}
+
+/* Individual tab styling */
+.tab {
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* Hover effect on tab links */
+.tab:hover {
+  color: #007bff;
+}
+
+/* Styling for the active tab */
+.active-tab {
+  font-weight: bold; /* Makes the active tab text bold */
+  color: #007bff; /* Optional: change the color of the active tab */
+}
+
+
+/* Style for sub-tabs container */
+.tabs-container {
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 16px;
+}
+
+/* Common sub-tab style */
+.sub-tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #3b82f6; /* Blue color */
+  font-size: 16px;
+  margin-right: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Style for active sub-tab */
+.active-sub-tab {
+  background-color: #4866F4; /* Blue background like in the image */
+  color: white; /* White text color */
+  border-radius: 6px; /* Slightly rounded corners */
+}
+
+/* Hover effect for sub-tabs */
+.sub-tab:hover {
+  background-color: #e0e0e0;
+  border-radius: 6px;
+}
